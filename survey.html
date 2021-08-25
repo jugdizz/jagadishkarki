@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 Survey</title>
+    <link rel="shortcut icon" href="images/coronavirus.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/survey.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Averia+Libre&display=swap');
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Novel Coronavirus Survey Form</h1>
+            <p id="description">Please help us fight this Pandemic to better understand this virus</p>
+        </header>
+        <form action="" id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required/>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Age</label>
+                <input type="number" name="Age" id="number" class="form-control" min="1" max="100" placeholder="Age" required/>
+            </div>
+            <div class="form-group">
+                <label for="dropdown" id="knowledge">Which option best describe your knowledge about Covid-19?</label>
+                <select name="role" id="dropdown" class="form-control" required>
+                    <option disabled selected value>Select Knowledge status</option>
+                    <option value="heard">I know about it</option>
+                    <option value="infected">I have been infected already</option>
+                    <option value="unknown">I don't know about it</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Do you take precaution against Covid-19?</p>
+                <label>
+                    <input type="radio" name="user-recommend" value="definitely" class="input-radio" required>Definitely
+                </label>
+                <label>
+                    <input type="radio" name="user-recommend" value="maybe" class="input-radio">Maybe
+                </label>
+                <label>
+                    <input type="radio" name="user-recommend" value="not-sure" class="input-radio">Not Sure
+                </label>
+            </div>
+            <div class="form-group">
+                <p>What is the best way to be protected?<span class="clue">(Check all that apply)</span></p>
+                <label for="">
+                    <input type="checkbox" name="prefer" id="" class="input-checkbox" value="washing-hand-frequently">Washing hand frequently
+                </label>
+
+                <label for="">
+                    <input type="checkbox" name="prefer" id="" class="input-checkbox" value="never-get-outside">Never get outside of home
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" id="" class="input-checkbox" value="sanitize">Sanitize whenever possible
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" id="" class="input-checkbox" value="limit-visit">Meet people only when absolutely necessary
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" id="" class="input-checkbox" value="carefree">Be carefree
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Add more you like:</p>
+                <textarea name="comment" id="comments" class="input-textarea" placeholder="Enter your opinions here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
